@@ -1,0 +1,105 @@
+chat_history,target_class,target_sentiment
+Customer: I can't log in to my account. Admin: Let me assist you.,support,negative
+"Customer: Could you help me with a technical issue? Admin: Sure, what seems to be the problem?",support,neutral
+Customer: حسابي مقفل ولا أستطيع الوصول إليه. Admin: سنقوم بمساعدتك فورًا.,support,negative
+Customer: The app keeps crashing. Admin: We are working on fixing this.,support,negative
+Customer: لدي مشكلة في تحديث معلومات حسابي. Admin: سنقوم بمساعدتك في حل المشكلة.,support,neutral
+Customer: I haven't received my order yet. Admin: Let me check its status.,orders,negative
+Customer: لقد أضفت طلبي ولكني لم أتلقى تأكيد بعد. Admin: سنتحقق من الأمر.,orders,negative
+"Customer: Can I change the shipping address? Admin: Sure, please provide the new address.",orders,neutral
+"Customer: My order arrived damaged. Admin: We're sorry to hear that, we will arrange a replacement.",orders,negative
+Customer: طلبت منتجين فقط، لماذا تم خصم مبلغ إضافي؟ Admin: سنتحقق من الفاتورة الآن.,orders,negative
+Customer: I love your service! Admin: Thank you!,feedback,positive
+Customer: The platform is very easy to use. Admin: We appreciate your feedback!,feedback,positive
+Customer: خدمتكم رائعة دائمًا. Admin: شكرًا لك!,feedback,positive
+Customer: Everything is working smoothly. Admin: We’re glad to hear that!,feedback,positive
+Customer: أنا راضٍ جدًا عن تجربتي معكم. Admin: شكرًا لك على ملاحظاتك الإيجابية.,feedback,positive
+Customer: I'm not happy with my order. Admin: I'm sorry to hear that.,complaint,negative
+"Customer: The product I received is defective. Admin: We apologize, we’ll replace it right away.",complaint,negative
+Customer: لم أعد أرغب في المنتج. Admin: سنقوم بترتيب إرجاع المنتج.,complaint,negative
+Customer: The customer service response time is too slow. Admin: We apologize for the inconvenience.,complaint,negative
+Customer: لدي مشكلة مع فاتورتي. Admin: سنتحقق من المشكلة.,complaint,negative
+"Customer: I just wanted to say hello. Admin: Hello, how can I assist you today?",other,neutral
+Customer: ماذا يمكنني أن أجد هنا؟ Admin: يمكنك العثور على العديد من المنتجات والخدمات.,other,neutral
+Customer: Just checking how your service works. Admin: We provide 24/7 support.,other,neutral
+Customer: أحتاج إلى بعض المعلومات الإضافية. Admin: سنقوم بتزويدك بجميع المعلومات المطلوبة.,other,neutral
+Customer: How can I create an account? Admin: You can sign up via our website or app.,other,neutral
+Customer: How can I cancel my order? Admin: I'll guide you through the process.,orders,neutral
+Customer: What is the status of my delivery? Admin: Your order is on the way.,orders,neutral
+Customer: I have an issue with my refund. Admin: Let's sort this out for you.,support,negative
+Customer: لقد قمت بالدفع ولكن لم يتم تأكيد الطلب. Admin: سنحل المشكلة على الفور.,orders,negative
+Customer: Your team was so helpful! Admin: We're glad to hear that.,feedback,positive
+Customer: I'm facing an issue with the product I received. Admin: We'll look into it immediately.,complaint,negative
+Customer: Thank you for the great support! Admin: It's our pleasure.,feedback,positive
+Customer: أريد الإبلاغ عن مشكلة في المنتج الذي تلقيته. Admin: نأسف لذلك، سنقوم بحلها.,complaint,negative
+Customer: I need help with a technical issue. Admin: I'll transfer you to the technical team.,support,negative
+"Customer: I received the wrong product. Admin: We're really sorry, let's fix that.",complaint,negative
+Customer: The payment process was smooth! Admin: Thank you for the feedback!,feedback,positive
+Customer: لدي شكوى بخصوص التأخير في التسليم. Admin: نعتذر عن التأخير وسنتحقق من ذلك.,complaint,negative
+Customer: I can't seem to track my order. Admin: Let me assist you with tracking.,support,negative
+Customer: أشكركم على الدعم الفني الممتاز. Admin: نحن هنا دائمًا لمساعدتك.,feedback,positive
+Customer: The product quality exceeded my expectations! Admin: We're happy to hear that!,feedback,positive
+Customer: هل يمكنني الحصول على مساعدة بخصوص استرداد مالي؟ Admin: بالطبع، سنقوم بمساعدتك.,support,neutral
+Customer: I added my order but haven't received confirmation yet. Admin: We will check it out.,orders,negative
+Customer: The website is not working properly. Admin: We are fixing the issue.,other,neutral
+Customer: How can I change my delivery address? Admin: Let me assist you.,support,negative
+Customer: I have a complaint about your support. Admin: We apologize for the inconvenience.,complaint,negative
+"Customer: I need help tracking my order. Admin: Sure, I will track it for you.",support,neutral
+Customer: Your service is amazing. Admin: We appreciate your feedback!,feedback,positive
+Customer: This product was defective. Admin: We will arrange a replacement.,complaint,negative
+Customer: أحب خدمتكم! Admin: شكراً لك!,feedback,positive
+Customer: لم أتمكن من تسجيل الدخول إلى حسابي. Admin: دعني أساعدك.,support,negative
+Customer: طلبي لم يصل بعد. Admin: سنبحث في الأمر.,orders,negative
+Customer: لدي شكوى حول المنتج. Admin: نعتذر عن الإزعاج.,complaint,negative
+Customer: كيف يمكنني تغيير عنوان التوصيل؟ Admin: سأساعدك.,other,neutral
+Customer: لم أحصل على الدعم المطلوب. Admin: نعتذر عن ذلك.,support,negative
+Customer: المنتج لا يعمل بشكل صحيح. Admin: سنعمل على استبداله.,complaint,negative
+Customer: لقد أضفت طلبي لكن لم أتلقَ تأكيداً. Admin: سنتحقق من الأمر.,orders,negative
+Customer: الموقع لا يعمل بشكل جيد. Admin: نحن نعمل على حل المشكلة.,other,neutral
+Customer: أنا سعيد جدًا بخدمتكم. Admin: شكراً لك!,feedback,positive
+Customer: I need help with my password reset. Admin: I can help with that.,support,negative
+Customer: My order hasn't arrived yet. Admin: We'll check the status for you.,orders,negative
+Customer: This is the best product I've bought! Admin: We're happy to hear that!,feedback,positive
+Customer: أريد استعادة أموالي. Admin: سننظر في طلبك.,complaint,negative
+Customer: My app keeps crashing. Admin: Have you tried updating it?,support,negative
+Customer: خدماتكم رائعة! Admin: نشكركم على رأيكم.,feedback,positive
+Customer: My payment was declined. Admin: Please try again or use a different card.,orders,negative
+Customer: I don't like how slow the process is. Admin: We're working on improving it.,complaint,negative
+Customer: كل شيء على ما يرام الآن. Admin: رائع!,feedback,positive
+Customer: I'm having trouble tracking my shipment. Admin: I’ll send you the tracking link.,support,negative
+Customer: I need help choosing the right product. Admin: Let me recommend something.,support,positive
+Customer: I received a broken item. Admin: We will send a replacement.,complaint,negative
+Customer: خدماتكم بطيئة للغاية. Admin: نعتذر عن الإزعاج، سنحسن الخدمة قريبًا.,complaint,negative
+Customer: My issue still isn't resolved. Admin: We're escalating this for you.,support,negative
+"Customer: I need to change my shipping address. Admin: Sure, I'll update it.",orders,negative
+Customer: لقد واجهت مشكلة في الدفع. Admin: سنقوم بالتحقق من الأمر.,complaint,negative
+Customer: The product is amazing. Admin: So happy to hear that!,feedback,positive
+Customer: My account was suspended. Admin: I will look into it for you.,support,negative
+Customer: شكرا على المساعدة الفعالة. Admin: سعداء بتقديم المساعدة.,feedback,positive
+Customer: This is my favorite service! Admin: Thanks for your loyalty!,feedback,positive
+"Customer: I placed my order two days ago, but it's still not confirmed. Admin: Let me look into that.",support,negative
+Customer: I can't download the invoice. Admin: Let me email it to you.,orders,negative
+Customer: I didn’t get a refund yet. Admin: We're processing it.,complaint,negative
+Customer: الطلب تأخر بشكل كبير. Admin: سنتحقق من السبب.,orders,negative
+Customer: Everything went smoothly! Admin: That's wonderful to hear!,feedback,positive
+Customer: My payment is stuck. Admin: I'll check the payment status.,support,negative
+Customer: تجربتي سيئة مع هذا المنتج. Admin: نعتذر وسنعالج المسألة.,feedback,negative
+Customer: Can I cancel my order? Admin: Let me cancel it for you.,orders,negative
+Customer: المنتج ممتاز جداً! Admin: شكراً لك على رأيك.,feedback,positive
+Customer: I can't access my order history. Admin: Let me reset your access.,support,negative
+Customer: ما عندي أي مشكلة مع الخدمة. Admin: شكراً لملاحظاتك.,feedback,positive
+Customer: I lost my password. Admin: I will send a password reset link.,complaint,negative
+Customer: Why was my order canceled? Admin: I'll check and let you know.,orders,negative
+Customer: كل شيء تمام. Admin: نحن سعداء بذلك!,feedback,positive
+Customer: I need technical support. Admin: I’ll transfer you to our tech team.,complaint,negative
+Customer: I'm unhappy with the refund process. Admin: We're working to improve it.,feedback,negative
+Customer: خدماتكم سيئة للغاية. Admin: نعتذر عن الإزعاج.,feedback,negative
+Customer: I'm satisfied with the product quality. Admin: That's great to hear!,feedback,positive
+Customer: When will my order be shipped? Admin: Let me check the delivery status.,support,negative
+Customer: الدفع لم يتم حتى الآن. Admin: سنتأكد من ذلك.,complaint,negative
+Customer: I can't find the product I want. Admin: I’ll help you search for it.,support,negative
+Customer: المنتج وصلني بسرعة. Admin: نحن سعداء لسماع ذلك!,support,positive
+Customer: I’m experiencing issues with the mobile app. Admin: Please try reinstalling it.,support,negative
+Customer: I’d like to leave feedback. Admin: We'd love to hear your thoughts.,feedback,natural
+Customer: أواجه مشكلة في التتبع. Admin: سأرسل لك الرابط للتتبع.,support,negative
+Customer: I'm trying to update my account info. Admin: I'll guide you through the process.,support,negative
