@@ -1,7 +1,0 @@
-langchain-google-genai
-langchain-core
-langchain
-google-api-core
-pandas
-fastapi
-uvicorn

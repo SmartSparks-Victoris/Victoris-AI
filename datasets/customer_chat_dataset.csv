@@ -1,0 +1,21 @@
+chat_history,target_class,target_sentiment
+Customer: I can't log in to my account. Admin: Let me assist you.,support,negative
+Customer: I love your service! Admin: Thank you!,feedback,positive
+Customer: I'm not happy with my order. Admin: I'm sorry to hear that.,complaint,negative
+Customer: I added my order but haven't received confirmation yet. Admin: We will check it out.,orders,negative
+Customer: The website is not working properly. Admin: We are fixing the issue.,other,neutral
+Customer: How can I change my delivery address? Admin: Let me assist you.,support,negative
+Customer: I have a complaint about your support. Admin: We apologize for the inconvenience.,complaint,negative
+"Customer: I need help tracking my order. Admin: Sure, I will track it for you.",support,neutral
+Customer: Your service is amazing. Admin: We appreciate your feedback!,feedback,positive
+Customer: This product was defective. Admin: We will arrange a replacement.,complaint,negative
+Customer: أحب خدمتكم! Admin: شكراً لك!,feedback,positive
+Customer: لم أتمكن من تسجيل الدخول إلى حسابي. Admin: دعني أساعدك.,support,negative
+Customer: طلبي لم يصل بعد. Admin: سنبحث في الأمر.,orders,negative
+Customer: لدي شكوى حول المنتج. Admin: نعتذر عن الإزعاج.,complaint,negative
+Customer: كيف يمكنني تغيير عنوان التوصيل؟ Admin: سأساعدك.,other,neutral
+Customer: لم أحصل على الدعم المطلوب. Admin: نعتذر عن ذلك.,support,negative
+Customer: المنتج لا يعمل بشكل صحيح. Admin: سنعمل على استبداله.,complaint,negative
+Customer: لقد أضفت طلبي لكن لم أتلقَ تأكيداً. Admin: سنتحقق من الأمر.,orders,negative
+Customer: الموقع لا يعمل بشكل جيد. Admin: نحن نعمل على حل المشكلة.,other,neutral
+Customer: أنا سعيد جدًا بخدمتكم. Admin: شكراً لك!,feedback,positive
