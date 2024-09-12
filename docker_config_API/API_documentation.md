@@ -1,5 +1,5 @@
 
-# InstaHub
+# InstaHub AI API Documentation
 
 ## Overview
 

@@ -82,7 +82,7 @@ target_sentiment: "negative"
 
 ## Deployment
 
-To deploy the models using Docker and FastAPI:
+### To deploy the models using Docker and FastAPI:
 1. Ensure Docker is installed and running.
 2. Navigate to the `docker_config_API` folder and run the following command for building the docker image:
    ```bash
@@ -94,4 +94,22 @@ To deploy the models using Docker and FastAPI:
    ```
 3. The FastAPI application will be running and ready to handle API requests for classification, sentiment analysis, summarization, and labeling.
 
+### To use the API by cloud
+You can access this link:
+```
+https://insthub-container-app.proudtree-0393b2da.germanywestcentral.azurecontainerapps.io/docs
+```
+
+## What's next?
+In our AI proposal, we have 4 models to deploy:
+1. Classification Model
+2. Sentiment Analysis Model
+3. Summary & Labeling Model
+4. Semantic Search Model
+
+We have succefully implemented and deployed the first 3 model. In the next Sprint, we will implement and deply the last model Semantic Search.
+
+
 For any issues or contributions, feel free to open a pull request or raise an issue.
+
+
