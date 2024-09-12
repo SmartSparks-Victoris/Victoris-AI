@@ -107,7 +107,7 @@ In our AI proposal, we have 4 models to deploy:
 3. Summary & Labeling Model
 4. Semantic Search Model
 
-We have succefully implemented and deployed the first 3 model. In the next Sprint, we will implement and deply the last model Semantic Search.
+We have succefully implemented and deployed the first 3 model. In the next Sprint, we will implement and deploy the last model Semantic Search.
 
 
 For any issues or contributions, feel free to open a pull request or raise an issue.
