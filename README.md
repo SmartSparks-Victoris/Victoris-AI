@@ -88,10 +88,3 @@ Here’s a brief overview of the key endpoints:
   "summary": "This is a long piece of text summarized."
 }
 ```
-
-## Setup Instructions
-
-
-## License
-
-This project is licensed under the MIT License.
