@@ -17,7 +17,7 @@ This project provides a REST API for classification, sentiment analysis, and sum
 The API is documented using Swagger, and you can access the interactive API documentation by visiting:
 
 ```
-http://localhost:8000/docs
+https://insthub-container-app.proudtree-0393b2da.germanywestcentral.azurecontainerapps.io/docs#/default/classification_classification_post
 ```
 
 This documentation provides details on all available endpoints and their request/response formats.
@@ -91,49 +91,6 @@ Here’s a brief overview of the key endpoints:
 
 ## Setup Instructions
 
-To run this API locally, follow the instructions below.
-
-### Prerequisites
-
-- Python 3.8 or higher
-- FastAPI
-- Uvicorn (for running the server)
-
-### Installation
-
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/yourusername/project-name.git
-    ```
-
-2. Navigate to the project directory:
-    ```bash
-    cd project-name
-    ```
-
-3. Create a virtual environment and activate it:
-    ```bash
-    python -m venv venv
-    source venv/bin/activate  # For Windows: venv\Scripts\activate
-    ```
-
-4. Install dependencies:
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-### Running the Server
-
-1. Start the FastAPI server using Uvicorn:
-    ```bash
-    uvicorn api:app --reload
-    ```
-
-2. Open your browser and navigate to `http://localhost:8000/docs` to view the API documentation.
-
-## Contributing
-
-Contributions are welcome! Please fork the repository and submit a pull request for any enhancements or bug fixes.
 
 ## License
 
