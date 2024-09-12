@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 import uvicorn
-from pydantic import BaseModel, Field
+from pydantic import BaseModel
 from models_functions import classification_model, sentiment_model, summary_model, label_model
 app = FastAPI()
 
