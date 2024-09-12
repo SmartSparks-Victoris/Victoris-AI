@@ -1,0 +1,26 @@
+chat_history,target_class,target_sentiment
+Customer: I can't log in to my account. Admin: Let me assist you.,support,negative
+"Customer: Could you help me with a technical issue? Admin: Sure, what seems to be the problem?",support,neutral
+Customer: حسابي مقفل ولا أستطيع الوصول إليه. Admin: سنقوم بمساعدتك فورًا.,support,negative
+Customer: The app keeps crashing. Admin: We are working on fixing this.,support,negative
+Customer: لدي مشكلة في تحديث معلومات حسابي. Admin: سنقوم بمساعدتك في حل المشكلة.,support,neutral
+Customer: I haven't received my order yet. Admin: Let me check its status.,orders,negative
+Customer: لقد أضفت طلبي ولكني لم أتلقى تأكيد بعد. Admin: سنتحقق من الأمر.,orders,negative
+"Customer: Can I change the shipping address? Admin: Sure, please provide the new address.",orders,neutral
+"Customer: My order arrived damaged. Admin: We're sorry to hear that, we will arrange a replacement.",orders,negative
+Customer: طلبت منتجين فقط، لماذا تم خصم مبلغ إضافي؟ Admin: سنتحقق من الفاتورة الآن.,orders,negative
+Customer: I love your service! Admin: Thank you!,feedback,positive
+Customer: The platform is very easy to use. Admin: We appreciate your feedback!,feedback,positive
+Customer: خدمتكم رائعة دائمًا. Admin: شكرًا لك!,feedback,positive
+Customer: Everything is working smoothly. Admin: We’re glad to hear that!,feedback,positive
+Customer: أنا راضٍ جدًا عن تجربتي معكم. Admin: شكرًا لك على ملاحظاتك الإيجابية.,feedback,positive
+Customer: I'm not happy with my order. Admin: I'm sorry to hear that.,complaint,negative
+"Customer: The product I received is defective. Admin: We apologize, we’ll replace it right away.",complaint,negative
+Customer: لم أعد أرغب في المنتج. Admin: سنقوم بترتيب إرجاع المنتج.,complaint,negative
+Customer: The customer service response time is too slow. Admin: We apologize for the inconvenience.,complaint,negative
+Customer: لدي مشكلة مع فاتورتي. Admin: سنتحقق من المشكلة.,complaint,negative
+"Customer: I just wanted to say hello. Admin: Hello, how can I assist you today?",other,neutral
+Customer: ماذا يمكنني أن أجد هنا؟ Admin: يمكنك العثور على العديد من المنتجات والخدمات.,other,neutral
+Customer: Just checking how your service works. Admin: We provide 24/7 support.,other,neutral
+Customer: أحتاج إلى بعض المعلومات الإضافية. Admin: سنقوم بتزويدك بجميع المعلومات المطلوبة.,other,neutral
+Customer: How can I create an account? Admin: You can sign up via our website or app.,other,neutral

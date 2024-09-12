@@ -1,0 +1,21 @@
+chat_history,target_class,target_sentiment
+Customer: I can't log in to my account. Admin: Let me assist you.,support,negative
+Customer: I love your service! Admin: Thank you!,feedback,positive
+Customer: I'm not happy with my order. Admin: I'm sorry to hear that.,complaint,negative
+Customer: لقد أضفت طلبي ولكني لم أتلقى تأكيد بعد. Admin: سنتحقق من الأمر.,orders,negative
+Customer: How can I cancel my order? Admin: I'll guide you through the process.,orders,neutral
+Customer: What is the status of my delivery? Admin: Your order is on the way.,orders,neutral
+Customer: I have an issue with my refund. Admin: Let's sort this out for you.,support,negative
+Customer: لقد قمت بالدفع ولكن لم يتم تأكيد الطلب. Admin: سنحل المشكلة على الفور.,orders,negative
+Customer: Your team was so helpful! Admin: We're glad to hear that.,feedback,positive
+Customer: I'm facing an issue with the product I received. Admin: We'll look into it immediately.,complaint,negative
+Customer: Thank you for the great support! Admin: It's our pleasure.,feedback,positive
+Customer: أريد الإبلاغ عن مشكلة في المنتج الذي تلقيته. Admin: نأسف لذلك، سنقوم بحلها.,complaint,negative
+Customer: I need help with a technical issue. Admin: I'll transfer you to the technical team.,support,negative
+"Customer: I received the wrong product. Admin: We're really sorry, let's fix that.",complaint,negative
+Customer: The payment process was smooth! Admin: Thank you for the feedback!,feedback,positive
+Customer: لدي شكوى بخصوص التأخير في التسليم. Admin: نعتذر عن التأخير وسنتحقق من ذلك.,complaint,negative
+Customer: I can't seem to track my order. Admin: Let me assist you with tracking.,support,negative
+Customer: أشكركم على الدعم الفني الممتاز. Admin: نحن هنا دائمًا لمساعدتك.,feedback,positive
+Customer: The product quality exceeded my expectations! Admin: We're happy to hear that!,feedback,positive
+Customer: هل يمكنني الحصول على مساعدة بخصوص استرداد مالي؟ Admin: بالطبع، سنقوم بمساعدتك.,support,neutral
