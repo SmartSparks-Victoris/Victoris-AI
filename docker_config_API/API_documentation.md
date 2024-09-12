@@ -17,7 +17,7 @@ This project provides a REST API for classification, sentiment analysis, and sum
 The API is documented using Swagger, and you can access the interactive API documentation by visiting:
 
 ```
-https://insthub-container-app.proudtree-0393b2da.germanywestcentral.azurecontainerapps.io/docs#/default/classification_classification_post
+https://insthub-container-app.proudtree-0393b2da.germanywestcentral.azurecontainerapps.io/docs
 ```
 
 This documentation provides details on all available endpoints and their request/response formats.
@@ -86,5 +86,20 @@ Here’s a brief overview of the key endpoints:
 ```json
 {
   "summary": "This is a long piece of text summarized."
+}
+```
+
+### Labeling
+**Request**:
+```json
+{
+  "chat": "This is a long piece of text that needs to be summarized into something more concise."
+}
+```
+
+**Response**:
+```json
+{
+  "label": "Request for text summarization. \n"
 }
 ```
