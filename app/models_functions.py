@@ -6,6 +6,7 @@ import random
 import pandas as pd
 import time
 import json
+import re
 
 def sentiment_model(chat_history):
     api_keys = [
