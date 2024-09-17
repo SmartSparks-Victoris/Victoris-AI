@@ -9,6 +9,21 @@ import json
 import re
 
 def sentiment_model(chat_history):
+    """
+    Analyzes the sentiment of a given chat history.
+    This function uses a language model to determine the sentiment of a conversation.
+    It randomly selects an API key from a predefined list to access the model and 
+    attempts to analyze the sentiment with retries in case of resource exhaustion or 
+    JSON parsing errors.
+
+    Parameters:
+    chat_history (str): The conversation text to be analyzed.
+
+    Returns:
+    tuple: A tuple containing the sentiment type ("positive", "negative", or "neutral") 
+           and the degree of sentiment (1 to 5 for positive, -1 to -5 for negative, or 0 for neutral).
+    """
+
     api_keys = [
         "AIzaSyA2Zxvvgy1qbYADGni4QCmC4pA7ZTIIU-c",
         "AIzaSyDSgcHg94NTkjSeIwptOssRV7UWi58HreE",
@@ -62,7 +77,21 @@ def sentiment_model(chat_history):
                 return "Error", 0
             
 def classification_model(chat_history, classes):
-    print(chat_history, classes)
+    """
+    Classifies a given chat history into one of the specified classes.
+
+    This function uses a language model to determine the class of a conversation.
+    It randomly selects an API key from a predefined set to access the model and 
+    attempts to classify the conversation based on the provided classes.
+
+    Parameters:
+    chat_history (str): The conversation text to be classified.
+    classes (list): A list of possible classes to classify the conversation into.
+
+    Returns:
+    str: The class that the conversation belongs to, as a single word.
+    """
+    
     api_keys = {"AIzaSyA2Zxvvgy1qbYADGni4QCmC4pA7ZTIIU-c",
                 "AIzaSyDSgcHg94NTkjSeIwptOssRV7UWi58HreE",
                 "AIzaSyBPifh4rqyEeDiHYwbPqEdLQtowJbVsHlY",
@@ -106,6 +135,20 @@ def classification_model(chat_history, classes):
     return classification_result
 
 def summary_model(chat):
+    """
+    Generates a summary for a given chat conversation.
+
+    This function uses a language model to create a concise summary of the provided chat.
+    It randomly selects an API key from a predefined set to access the model and 
+    generates a summary that is no more than 50 words.
+
+    Parameters:
+    chat (str): The conversation text to be summarized.
+
+    Returns:
+    str: A summary of the conversation in no more than 50 words.
+    """
+
     api_keys = {"AIzaSyA2Zxvvgy1qbYADGni4QCmC4pA7ZTIIU-c",
             "AIzaSyDSgcHg94NTkjSeIwptOssRV7UWi58HreE",
             "AIzaSyBPifh4rqyEeDiHYwbPqEdLQtowJbVsHlY",
@@ -134,6 +177,20 @@ def summary_model(chat):
     return summary_result
         
 def label_model(chat):
+    """
+    Generates a label for a given chat conversation.
+
+    This function uses a language model to create a concise label for the provided chat.
+    It randomly selects an API key from a predefined set to access the model and 
+    generates a label in one simple sentence.
+
+    Parameters:
+    chat (str): The conversation text to be labeled.
+
+    Returns:
+    str: A label for the conversation in one simple sentence.
+    """
+    
     api_keys = {"AIzaSyA2Zxvvgy1qbYADGni4QCmC4pA7ZTIIU-c",
             "AIzaSyDSgcHg94NTkjSeIwptOssRV7UWi58HreE",
             "AIzaSyBPifh4rqyEeDiHYwbPqEdLQtowJbVsHlY",
@@ -161,16 +218,3 @@ def label_model(chat):
     summary_result = summary_chain.run(chat=chat)
     return summary_result
 
-
-# df = pd.read_csv("Combined_Customer_Chat_Dataset.csv")
-# test_list = df["chat_history"].head(5).tolist()
-
-# for i, test in enumerate(test_list):
-#     print(f"Test {i}: ", test)
-#     print("Sentiment: ", sentiment_model(test))
-#     print("Classification: ", classification_model(test, ["support", "feedback", "complaint", "orders", "others"]))
-#     print("Summary: ", summary_model(test))
-#     print("Label: ", label_model(test))
-#     print("\n")
-
-# print(classification_model("Customer:I can't log in to my account. Admin: Let me assist you.",["support", "feedback", "complaint", "orders", "others"]))
