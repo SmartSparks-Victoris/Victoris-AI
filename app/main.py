@@ -15,7 +15,7 @@ logging.basicConfig(level=logging.INFO)
 
 @app.get("/")
 def read_root():
-    response = {"message": "weebhook updated_3"}
+    response = {"message": "weebhook updated"}
     logging.info(f"Response: {response}")
     return response
 
