@@ -7,6 +7,7 @@ import re
 app = FastAPI()
 
 VERIFY_TOKEN = "your_unique_verify_token_123"
+stored_data = None
 class classificationParam(BaseModel):
     chat:str
     classes:list[str]
@@ -21,11 +22,24 @@ def read_root():
 
 @app.post("/webhook")
 async def webhook(request: Request):
+    global stored_data
     headers = request.headers
     body = await request.json()
-    logging.info(f"Headers: {headers}\n")
+    logging.info(f"Headers: {headers}\n\n")
     logging.info(f"Body: {body}\n")
+    
+    # Store the received data
+    stored_data = body
+    
     return {"message": "post success"}
+
+@app.get("/get-data")
+async def get_data():
+    global stored_data
+    if stored_data is None:
+        raise HTTPException(status_code=404, detail="No data available")
+    
+    return stored_data
 
 @app.get("/webhook")
 def webhook(hub_mode: str = Query(None,alias="hub.mode"),
