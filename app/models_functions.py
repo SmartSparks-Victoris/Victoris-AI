@@ -9,7 +9,7 @@ import torch
 from sentence_transformers import SentenceTransformer
 import chromadb
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-model_path ="embeddings_model"
+model_path ="distiluse-base-multilingual-cased-v2"
 model = SentenceTransformer(model_path, device=device)
 client = chromadb.PersistentClient(path="./chromadb-docs")
 collection = client.get_or_create_collection(
