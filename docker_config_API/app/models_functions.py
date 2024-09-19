@@ -3,10 +3,19 @@ from langchain_core.prompts import PromptTemplate
 from langchain.chains import LLMChain
 from google.api_core.exceptions import ResourceExhausted
 import random
-import pandas as pd
 import time
 import json
+import torch
+from sentence_transformers import SentenceTransformer
+import chromadb
 
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+model = SentenceTransformer('distiluse-base-multilingual-cased-v2', device=device)
+client = chromadb.PersistentClient(path="./chromadb-docs")
+collection = client.get_or_create_collection(
+    name="embeddings",
+    metadata={"hnsw:space":"cosine"}
+)
 def sentiment_model(chat_history):
     """
     Analyzes the sentiment of a given chat history.
@@ -217,3 +226,32 @@ def label_model(chat):
     summary_result = summary_chain.run(chat=chat)
     return summary_result
 
+
+def get_data(id,data: str):
+    embedding = model.encode(data)
+    embedding = embedding.tolist()
+    collection = client.get_or_create_collection(
+        name="embeddings",
+        metadata={"hnsw:space":"cosine"}
+    )
+    collection.add(
+        documents=[data],
+        embeddings=embedding,
+        ids=[str(id)]
+    )
+
+def query(question: str):
+    query_embedding = model.encode(question)
+    # collection = client.get_collection(name="embeddings")
+    results = collection.query(
+        query_embeddings=query_embedding.tolist(),
+        n_results=5
+    )
+    # Extract IDs and calculate scores
+    ids = results['ids'][0]
+    scores = [1 - distance for distance in results['distances'][0]]
+    
+    # Combine IDs and scores into a list of dictionaries
+    result_list = [{'id': id, 'score': score} for id, score in zip(ids, scores)]
+    
+    return result_list

@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 import uvicorn
 from pydantic import BaseModel
-from models_functions import classification_model, sentiment_model, summary_model, label_model
+from models_functions import *
 app = FastAPI()
 
 
@@ -32,6 +32,15 @@ def summary(chat):
 def label(chat):
     label = label_model(chat)
     return {"label": label}
+
+@app.post("/send-data")
+def store_data(id:int, data:str):
+    get_data(id, data)
+
+@app.get("/similarity")
+def similarity(question):
+    similarity = query(question=question)
+    return similarity
 
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8000)
