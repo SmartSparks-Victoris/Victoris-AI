@@ -260,4 +260,7 @@ def query(question: str):
 if __name__ == "__main__":
     get_data("1", "The Eiffel Tower is located in Paris.")
     print(query("Where is the Eiffel Tower located?"))
+<<<<<<< HEAD
+>>>>>>> 379255454551fcb8c8cdacb2a6b8bf7cdbd2b577
+=======
 >>>>>>> 379255454551fcb8c8cdacb2a6b8bf7cdbd2b577
