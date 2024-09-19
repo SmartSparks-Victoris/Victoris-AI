@@ -251,16 +251,4 @@ def query(question: str):
     
     # Combine IDs and scores into a list of dictionaries
     result_list = [{'id': id, 'score': score} for id, score in zip(ids, scores)]
-    
-<<<<<<< HEAD
     return result_list
-=======
-    return result_list
-
-if __name__ == "__main__":
-    get_data("1", "The Eiffel Tower is located in Paris.")
-    print(query("Where is the Eiffel Tower located?"))
-<<<<<<< HEAD
->>>>>>> 379255454551fcb8c8cdacb2a6b8bf7cdbd2b577
-=======
->>>>>>> 379255454551fcb8c8cdacb2a6b8bf7cdbd2b577
