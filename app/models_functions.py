@@ -9,7 +9,7 @@ import torch
 from sentence_transformers import SentenceTransformer
 import chromadb
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-model_path ="embeddings_model"
+model_path ="distiluse-base-multilingual-cased-v2"
 model = SentenceTransformer(model_path, device=device)
 client = chromadb.PersistentClient(path="./chromadb-docs")
 collection = client.get_or_create_collection(
@@ -226,7 +226,6 @@ def label_model(chat):
     summary_result = summary_chain.run(chat=chat)
     return summary_result
 
-
 def get_data(id,data: str):
     embedding = model.encode(data)
     embedding = embedding.tolist()
@@ -253,8 +252,12 @@ def query(question: str):
     # Combine IDs and scores into a list of dictionaries
     result_list = [{'id': id, 'score': score} for id, score in zip(ids, scores)]
     
+<<<<<<< HEAD
+    return result_list
+=======
     return result_list
 
 if __name__ == "__main__":
     get_data("1", "The Eiffel Tower is located in Paris.")
     print(query("Where is the Eiffel Tower located?"))
+>>>>>>> 379255454551fcb8c8cdacb2a6b8bf7cdbd2b577
