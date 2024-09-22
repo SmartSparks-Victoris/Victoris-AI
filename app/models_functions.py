@@ -140,6 +140,7 @@ def classification_model(chat_history, classes):
     classification_chain = LLMChain(llm=llm, prompt=classification_prompt)
     classification_result = classification_chain.run(chat=chat_history, classes=classes, verbose=False)
     print(classification_result)
+    classification_result = classification_result.rstrip()
     return classification_result
 
 def summary_model(chat):
@@ -182,6 +183,7 @@ def summary_model(chat):
     )
     summary_chain = LLMChain(llm=llm, prompt=summary_prompt)
     summary_result = summary_chain.run(chat=chat)
+    summary_result = summary_result.rstrip()
     return summary_result
         
 def label_model(chat):
@@ -224,6 +226,7 @@ def label_model(chat):
     )
     summary_chain = LLMChain(llm=llm, prompt=summary_prompt)
     summary_result = summary_chain.run(chat=chat)
+    summary_result = summary_result.rstrip()
     return summary_result
 
 def get_data(id,data: str):
