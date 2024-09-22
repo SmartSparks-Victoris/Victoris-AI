@@ -34,7 +34,7 @@ async def webhook(request: Request):
     body = await request.json()
     
     # froward the body to  .Net servver
-    url = "https://instahub20240922071505.azurewebsites.net/api/Ticket/receive-whatsapp-messages"
+    url = "https://instahub20240922062720.azurewebsites.net/api/Ticket/receive-whatsapp-messages"
     async with httpx.AsyncClient() as client:
         response = await client.post(url, json=body)
 
