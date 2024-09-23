@@ -8,9 +8,9 @@ import json
 import torch
 from sentence_transformers import SentenceTransformer
 import chromadb
-
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-model = SentenceTransformer('distiluse-base-multilingual-cased-v2', device=device)
+model_path ="distiluse-base-multilingual-cased-v2"
+model = SentenceTransformer(model_path, device=device)
 client = chromadb.PersistentClient(path="./chromadb-docs")
 collection = client.get_or_create_collection(
     name="embeddings",
@@ -140,6 +140,7 @@ def classification_model(chat_history, classes):
     classification_chain = LLMChain(llm=llm, prompt=classification_prompt)
     classification_result = classification_chain.run(chat=chat_history, classes=classes, verbose=False)
     print(classification_result)
+    classification_result = classification_result.rstrip()
     return classification_result
 
 def summary_model(chat):
@@ -182,6 +183,7 @@ def summary_model(chat):
     )
     summary_chain = LLMChain(llm=llm, prompt=summary_prompt)
     summary_result = summary_chain.run(chat=chat)
+    summary_result = summary_result.rstrip()
     return summary_result
         
 def label_model(chat):
@@ -224,8 +226,8 @@ def label_model(chat):
     )
     summary_chain = LLMChain(llm=llm, prompt=summary_prompt)
     summary_result = summary_chain.run(chat=chat)
+    summary_result = summary_result.rstrip()
     return summary_result
-
 
 def get_data(id,data: str):
     embedding = model.encode(data)
@@ -242,7 +244,6 @@ def get_data(id,data: str):
 
 def query(question: str):
     query_embedding = model.encode(question)
-    # collection = client.get_collection(name="embeddings")
     results = collection.query(
         query_embeddings=query_embedding.tolist(),
         n_results=5
@@ -253,5 +254,4 @@ def query(question: str):
     
     # Combine IDs and scores into a list of dictionaries
     result_list = [{'id': id, 'score': score} for id, score in zip(ids, scores)]
-    
     return result_list
