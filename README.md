@@ -7,6 +7,7 @@ This repository is part of a larger customer service platform project and focuse
 - **Sentiment Model**: This model performs sentiment analysis on customer chats, determining whether the sentiment is positive, negative, or neutral.
 - **Summary Model**: This model generates summaries of long customer chats.
 - **Labeling Model**: This model labels customer chats based on predefined categories.
+- **Semantic Search**: Performs a semantic search based on the provided question.
 
 ## Repository Structure
 
@@ -86,29 +87,19 @@ target_sentiment: "negative"
 1. Ensure Docker is installed and running.
 2. Navigate to the `docker_config_API` folder and run the following command for building the docker image:
    ```bash
-   docker build --tag instabug-test .
+   docker build --tag instahub-test .
    ```
    After that, run this command to run the container
    ``` bash
-   docker run --name insthub-container-2 -d -p 8000:8000 instabug-test
+   docker run --name insthub-container-2 -d -p 8000:8000 instahub-test
    ```
 3. The FastAPI application will be running and ready to handle API requests for classification, sentiment analysis, summarization, and labeling.
 
 ### To use the API by cloud
 You can access this link:
 ```
-https://insthub-container-app.proudtree-0393b2da.germanywestcentral.azurecontainerapps.io/docs
+instahub-docker-hub-gwdpdpdje3c8daen.germanywestcentral-01.azurewebsites.net\docs
 ```
-
-## What's Next?
-
-In our AI proposal, we have four models to deploy:
-1. Classification Model
-2. Sentiment Analysis Model
-3. Summary & Labeling Model
-4. Semantic Search Model
-
-We have successfully implemented and deployed the first three models. In the next sprint, we will implement and deploy the last model, Semantic Search.
 
 
 For any issues or contributions, feel free to open a pull request or raise an issue.

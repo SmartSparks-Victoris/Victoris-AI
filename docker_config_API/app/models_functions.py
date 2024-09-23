@@ -230,6 +230,15 @@ def label_model(chat):
     return summary_result
 
 def get_data(id,data: str):
+    """
+    Encodes the provided data (summary of the chat) into an embedding
+    using a pre-trained model and stores it in a vector database along
+    with the provided ID.
+
+    Parameters:
+    id (int or str): The unique identifier for the data.
+    data (str): The summary of the chat to be encoded and stored.
+    """
     embedding = model.encode(data)
     embedding = embedding.tolist()
     collection = client.get_or_create_collection(
@@ -243,6 +252,13 @@ def get_data(id,data: str):
     )
 
 def query(question: str):
+    """
+    Performs a semantic search by encoding the provided question into an embedding,
+    querying the vector database, and returning the top 5 results with their IDs and scores.
+
+    Parameters:
+    question (str): The question to be encoded and searched.
+    """
     query_embedding = model.encode(question)
     results = collection.query(
         query_embeddings=query_embedding.tolist(),
