@@ -98,7 +98,7 @@ target_sentiment: "negative"
 ### To use the API by cloud
 You can access this link:
 ```
-instahub-docker-hub-gwdpdpdje3c8daen.germanywestcentral-01.azurewebsites.net\docs
+instahub.azurewebsites.net/docs
 ```
 
 
